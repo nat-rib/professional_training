@@ -16,6 +16,7 @@
         function roubaGrana() {
             const options = {
                 method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: {amount: 1000}}
             
             fetch('http://localhost:8080/tranfer', options)
