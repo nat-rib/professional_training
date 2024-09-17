@@ -1,0 +1,1 @@
+https://www.linkedin.com/pulse/xxe-attacks-python-django-applications-jerin-jose
