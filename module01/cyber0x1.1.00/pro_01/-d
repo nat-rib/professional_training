@@ -1,0 +1,49 @@
+== Info: Could not resolve host: amount=100
+== Info: Closing connection 0
+== Info:   Trying 127.0.0.1:8080...
+== Info: TCP_NODELAY set
+== Info: Connected to localhost (127.0.0.1) port 8080 (#1)
+=> Send header, 87 bytes (0x57)
+0000: 50 4f 53 54 20 2f 74 72 61 6e 73 66 65 72 20 48 POST /transfer H
+0010: 54 54 50 2f 31 2e 31 0d 0a 48 6f 73 74 3a 20 6c TTP/1.1..Host: l
+0020: 6f 63 61 6c 68 6f 73 74 3a 38 30 38 30 0d 0a 55 ocalhost:8080..U
+0030: 73 65 72 2d 41 67 65 6e 74 3a 20 63 75 72 6c 2f ser-Agent: curl/
+0040: 37 2e 36 38 2e 30 0d 0a 41 63 63 65 70 74 3a 20 7.68.0..Accept: 
+0050: 2a 2f 2a 0d 0a 0d 0a                            */*....
+== Info: Mark bundle as not supporting multiuse
+<= Recv header, 17 bytes (0x11)
+0000: 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d HTTP/1.1 200 OK.
+0010: 0a                                              .
+<= Recv header, 23 bytes (0x17)
+0000: 58 2d 50 6f 77 65 72 65 64 2d 42 79 3a 20 45 78 X-Powered-By: Ex
+0010: 70 72 65 73 73 0d 0a                            press..
+<= Recv header, 47 bytes (0x2f)
+0000: 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 Content-Type: ap
+0010: 70 6c 69 63 61 74 69 6f 6e 2f 6a 73 6f 6e 3b 20 plication/json; 
+0020: 63 68 61 72 73 65 74 3d 75 74 66 2d 38 0d 0a    charset=utf-8..
+<= Recv header, 20 bytes (0x14)
+0000: 43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 Content-Length: 
+0010: 37 36 0d 0a                                     76..
+<= Recv header, 42 bytes (0x2a)
+0000: 45 54 61 67 3a 20 57 2f 22 34 63 2d 49 64 69 31 ETag: W/"4c-Idi1
+0010: 49 2f 59 30 48 33 38 74 31 35 6b 32 2b 6b 63 51 I/Y0H38t15k2+kcQ
+0020: 6d 31 52 41 7a 71 4d 22 0d 0a                   m1RAzqM"..
+<= Recv header, 37 bytes (0x25)
+0000: 44 61 74 65 3a 20 4d 6f 6e 2c 20 31 36 20 53 65 Date: Mon, 16 Se
+0010: 70 20 32 30 32 34 20 32 31 3a 31 37 3a 30 38 20 p 2024 21:17:08 
+0020: 47 4d 54 0d 0a                                  GMT..
+<= Recv header, 24 bytes (0x18)
+0000: 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 70 Connection: keep
+0010: 2d 61 6c 69 76 65 0d 0a                         -alive..
+<= Recv header, 23 bytes (0x17)
+0000: 4b 65 65 70 2d 41 6c 69 76 65 3a 20 74 69 6d 65 Keep-Alive: time
+0010: 6f 75 74 3d 35 0d 0a                            out=5..
+<= Recv header, 2 bytes (0x2)
+0000: 0d 0a                                           ..
+<= Recv data, 76 bytes (0x4c)
+0000: 7b 22 73 75 63 63 65 73 73 22 3a 66 61 6c 73 65 {"success":false
+0010: 2c 22 65 72 72 6f 72 22 3a 22 49 6e 76 61 6c 69 ,"error":"Invali
+0020: 64 20 74 72 61 6e 73 66 65 72 20 61 6d 6f 75 6e d transfer amoun
+0030: 74 20 6f 72 20 69 6e 73 75 66 66 69 63 69 65 6e t or insufficien
+0040: 74 20 62 61 6c 61 6e 63 65 2e 22 7d             t balance."}
+== Info: Connection #1 to host localhost left intact

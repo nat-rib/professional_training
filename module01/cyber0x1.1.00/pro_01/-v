@@ -1,0 +1,50 @@
+== Info:   Trying 127.0.0.1:8080...
+== Info: TCP_NODELAY set
+== Info: Connected to localhost (127.0.0.1) port 8080 (#0)
+=> Send header, 156 bytes (0x9c)
+0000: 50 4f 53 54 20 2f 74 72 61 6e 73 66 65 72 20 48 POST /transfer H
+0010: 54 54 50 2f 31 2e 31 0d 0a 48 6f 73 74 3a 20 6c TTP/1.1..Host: l
+0020: 6f 63 61 6c 68 6f 73 74 3a 38 30 38 30 0d 0a 55 ocalhost:8080..U
+0030: 73 65 72 2d 41 67 65 6e 74 3a 20 63 75 72 6c 2f ser-Agent: curl/
+0040: 37 2e 36 38 2e 30 0d 0a 41 63 63 65 70 74 3a 20 7.68.0..Accept: 
+0050: 2a 2f 2a 0d 0a 43 6f 6e 74 65 6e 74 2d 4c 65 6e */*..Content-Len
+0060: 67 74 68 3a 20 31 30 0d 0a 43 6f 6e 74 65 6e 74 gth: 10..Content
+0070: 2d 54 79 70 65 3a 20 61 70 70 6c 69 63 61 74 69 -Type: applicati
+0080: 6f 6e 2f 78 2d 77 77 77 2d 66 6f 72 6d 2d 75 72 on/x-www-form-ur
+0090: 6c 65 6e 63 6f 64 65 64 0d 0a 0d 0a             lencoded....
+=> Send data, 10 bytes (0xa)
+0000: 61 6d 6f 75 6e 74 3d 31 30 30                   amount=100
+== Info: upload completely sent off: 10 out of 10 bytes
+== Info: Mark bundle as not supporting multiuse
+<= Recv header, 17 bytes (0x11)
+0000: 48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d HTTP/1.1 200 OK.
+0010: 0a                                              .
+<= Recv header, 23 bytes (0x17)
+0000: 58 2d 50 6f 77 65 72 65 64 2d 42 79 3a 20 45 78 X-Powered-By: Ex
+0010: 70 72 65 73 73 0d 0a                            press..
+<= Recv header, 47 bytes (0x2f)
+0000: 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 Content-Type: ap
+0010: 70 6c 69 63 61 74 69 6f 6e 2f 6a 73 6f 6e 3b 20 plication/json; 
+0020: 63 68 61 72 73 65 74 3d 75 74 66 2d 38 0d 0a    charset=utf-8..
+<= Recv header, 20 bytes (0x14)
+0000: 43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 Content-Length: 
+0010: 31 36 0d 0a                                     16..
+<= Recv header, 42 bytes (0x2a)
+0000: 45 54 61 67 3a 20 57 2f 22 31 30 2d 6f 56 34 68 ETag: W/"10-oV4h
+0010: 4a 78 52 56 53 45 4e 78 63 2f 77 58 38 2b 6d 41 JxRVSENxc/wX8+mA
+0020: 34 2f 50 65 34 74 41 22 0d 0a                   4/Pe4tA"..
+<= Recv header, 37 bytes (0x25)
+0000: 44 61 74 65 3a 20 4d 6f 6e 2c 20 31 36 20 53 65 Date: Mon, 16 Se
+0010: 70 20 32 30 32 34 20 32 31 3a 31 36 3a 30 36 20 p 2024 21:16:06 
+0020: 47 4d 54 0d 0a                                  GMT..
+<= Recv header, 24 bytes (0x18)
+0000: 43 6f 6e 6e 65 63 74 69 6f 6e 3a 20 6b 65 65 70 Connection: keep
+0010: 2d 61 6c 69 76 65 0d 0a                         -alive..
+<= Recv header, 23 bytes (0x17)
+0000: 4b 65 65 70 2d 41 6c 69 76 65 3a 20 74 69 6d 65 Keep-Alive: time
+0010: 6f 75 74 3d 35 0d 0a                            out=5..
+<= Recv header, 2 bytes (0x2)
+0000: 0d 0a                                           ..
+<= Recv data, 16 bytes (0x10)
+0000: 7b 22 73 75 63 63 65 73 73 22 3a 74 72 75 65 7d {"success":true}
+== Info: Connection #0 to host localhost left intact
