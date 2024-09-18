@@ -1,5 +1,5 @@
 
-Criei um script python para gerar o pickel do comando que eu quero executar na aplicação
+- Criei um script python para gerar o pickel do comando que eu quero executar na aplicação
 
 ```python3
 import pickle
@@ -17,6 +17,8 @@ print(encoded_payload)
 ```
 gASVEwAAAAAAAABDD2NhdCAvZXRjL3Bhc3N3ZJQu
 ```
+
+- O mesmo scrip, mas agora para 
 
 
 ```python3
