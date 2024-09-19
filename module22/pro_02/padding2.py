@@ -13,12 +13,14 @@ def oracle(ciphertext: bytes):
     else:
         raise RuntimeError('Unexpected behavior')
 
-ciphertext = base64_decode('te2i394ebms94g3820lv59hii6')
+ciphertext = base64_decode('M9I2K9mZxzRUvyMkFRebeQzrCaMta83eAE72lMxzg94=')
 assert len(ciphertext) % 16 == 0
 
 plaintext = decrypt(
     ciphertext,
     block_size=16,
     oracle=oracle,
-    num_threads=16,
+    num_threads=16
 )
+
+print(plaintext.decode())
