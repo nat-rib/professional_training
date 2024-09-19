@@ -6,7 +6,6 @@
 
 
 ## Pickle
-https://www.vulnhub.com/
 Pickle é uma biblioteca python que consegue serializar e deserializar objetos em Python. 
 
 O processo de pickling converte um objeto para um stream de bytes, é um processo alternativo de serialização.

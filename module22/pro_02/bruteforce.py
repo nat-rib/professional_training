@@ -34,4 +34,4 @@ def get_usernames(prefix):
     return usernames
 
 for u in get_usernames(""):
-    get_usernames(None)
+    get_password(u)
