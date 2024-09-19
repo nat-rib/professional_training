@@ -16,10 +16,10 @@ def inject1(password):
 
 def inject_token(token):
 
-    ID2 = base64.b64decode(ID).decode('utf-8', errors='ignore')
+    #ID2 = base64.b64decode(ID).decode('utf-8', errors='ignore')
 
     header = {
-        "Cookie": "PHPSESSID=" + phpsession + ";token=" + token + ";ID=" + ID2
+        "Cookie": "PHPSESSID=" + phpsession + ";token=" + token + ";ID=" + ID
     }
     result = requests.post(url, headers=header)
     return result
